@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Crystal Collector Game</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+	<div id = "main">
+		<div class = "container">
+			<button id = "instructions">Instructions</button>
+			<header>
+				<h1>Crystals Collector</h1>
+			</header>
+			
+			<div class = "row">
+				<div class = "col-6" id = "display-left"> 
+					<div id ="computerDisplay">
+						<p>Random Number:</p>
+						<p>65</p>
+					</div>
+				</div>
+				<div class = "col-6" id = "display-right">
+					<div id = "playerDisplay">
+						<p>Your Score:</p>
+						<p>82</p>
+					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-3">
+					<div class = "crystalContainer">
+						<img src ="assets/images/gems/gem1.png" class = "crystal">
+					</div>
+				</div>
+				<div class = "col-3">
+					<div class = "crystalContainer">
+						<img src ="assets/images/gems/gem2.png" class = "crystal">
+					</div>
+				</div>
+				<div class = "col-3">
+					<div class = "crystalContainer">
+						<img src ="assets/images/gems/gem3.png" class = "crystal">
+					</div>
+				</div>
+				<div class = "col-3">
+					<div class = "crystalContainer">
+						<img src ="assets/images/gems/gem4.png" class = "crystal">
+					</div>
+				</div>
+			</div>
+			<div class = "row" id = "thisRow">
+				<div class = "consoleContainer">
+					<p id = "consoleDisplay">Will send messages here!</p>
+					<p id = "wins">Wins:</p>
+					<p id = "losses">Losses:</p>
+				</div>
+			</div>
+			<div id="instructionsModal" class="modal">
+
+			 	<div class="modal-content">
+				    <span class="close">&times;</span>
+				    <h1>Instructions</h1>
+				    <ul class = "modalList">
+					    <li>You will be given a random number at the start of the game.</li>
+					    <li>There are four crystals provided. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+					    <li>You win the game by matching your total score to the random number; you lose the game if your total score goes above the random number.</li>
+					    <li>The value of each crystal is hidden from you until you click on it.</li>
+					    <li>Each time when the game starts, the game will change the values of each crystal.</li>
+					</ul>
+			 	</div>
+			</div>
+		</div>
+	</div>
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+	</body>
+</html>

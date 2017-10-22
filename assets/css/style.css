@@ -1,0 +1,152 @@
+body{
+	background-image: url("../images/crystalBackground.jpg"); 
+	color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+.row{
+	padding-top: 15px;
+    padding-bottom: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*Column sizes, grid system.*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+/*  padding-top: 15px;
+    padding-bottom: 15px;
+*/}
+
+
+.container{
+	clear: both;
+	width: 100%;
+	height: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: black;
+	overflow: auto;
+	border: 1px dashed #ddd;
+	margin-top: 30px;
+	padding: 15px;
+}
+
+#instructions{
+	float: right; 
+	position: fixed;
+}
+header{
+	background-color: #0B3357;
+
+}
+h1{
+	font-weight: bold;
+	font-size: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px dashed white;
+}
+
+#display-left{
+	padding-right: 15px;
+}
+#display-right{
+	padding-left: 15px;
+}
+#computerDisplay, #playerDisplay{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 1.6em;
+	font-size: 35px;
+	text-align: center;
+	border: 2px dashed white;
+}
+#computerDisplay{
+	background-color: #337AB7;
+}
+#playerDisplay{
+	background-color: #5CB85C;
+}
+.crystalContainer{
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 150px;
+}
+.crystal{
+	max-width: 100%;
+	max-height: 90%;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+#thisRow{
+	max-width: 75%;
+	margin: 0 auto;
+}
+.consoleContainer{
+	background-color: brown; 
+	padding: 25px;
+	text-align: center;
+	font-size: 25px;
+	border: 5px dashed white;
+	line-height: 1.6em;
+}
+.modal {
+    display: block; /* Shows by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 25%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+/* Modal Content */
+.modal-content {
+    background-color: #D3D3D3;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 50%;
+    color: black;
+    font-size: 20px;
+}
+ul.modalList{
+	list-style-type: square;
+}
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    cursor: pointer;
+}
