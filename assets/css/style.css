@@ -50,7 +50,6 @@ body{
 }
 
 #instructions{
-	float: right; 
 	position: fixed;
 }
 header{
