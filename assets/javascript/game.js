@@ -59,6 +59,8 @@ $(document).ready(function(){
 		$('#wins').text('Wins: ' + game.wins);
 		$('#losses').text('Losses: ' + game.losses);
 	}
+
+	//start the game from here.
 	
 	resetGame();
 
